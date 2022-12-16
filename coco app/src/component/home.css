@@ -1,10 +1,15 @@
+.home_div {
+    background-color: rgb(124, 124, 187);
+}
+
 
 .home_title {
 
     text-align: center;
-    background-color: aliceblue;
+    background-color: rgb(86, 136, 180);
 }
 
 .home_p {
     text-align: center;
 }
+
