@@ -4,12 +4,17 @@
   float: left;
 }
 
+
 .topnav_table {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: beige;
+  background-color: rgb(229, 243, 180);
+  position: fixed;
+  width:100%;
+  top:0px;
+  z-index: 1;
 }
 li {
   float:right;

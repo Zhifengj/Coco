@@ -1,10 +1,44 @@
 .product_div{
-    background-color: blueviolet;
+    background-color: rgb(235, 233, 233);
+    margin-top: 66px;
 }
 
-.image_div{
+.tab_div {
     margin: auto;
-    width:50%;
-    border: 3px solid black;
+    width: 70%;
+
+    border: 1px solid rgb(187, 181, 181);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
+}
+.gallery{
+
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    border: 2px black;
+}
+
+.nav-item{
+    padding: 0px;
+}
+
+h2 {
+    margin-left:15%;
+}
+
+
+#model {
+    width: 22%;
+    float: left;
+}
+
+#Size {
+    width: 25%;
+    float: left;
+}
+
+#Prod_Cat {
+    float: right;
+    width: 50%;
 }
