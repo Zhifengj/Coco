@@ -4,7 +4,6 @@ import './App.css';
 import Home from './component/home';
 import About from './component/about';
 import Products from './component/products';
-import logo from './Images/logo.png'
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
@@ -19,7 +18,7 @@ class App extends Component {
           <div className='topnav'>
             <ul className='topnav_table'>
               <li className='logo'>
-                <a href='/'><img src={logo} height="20" width="20" /></a>
+                <a href='/'><img src={require('./Images/logo.png')} height="20" width="20" /></a>
               </li>
               <li>
                 <Link to="/about" class="btn btn-outline-info"> About Us</Link>
@@ -75,7 +74,7 @@ class App extends Component {
                     <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
                       <h6 className='text-uppercase fw-bold mb-4'>
                         <MDBIcon icon="gem" className="me-3" />
-                        Coco's company
+                        XC.LLC
                       </h6>
                       <p>
                         This is something you can say about the company
@@ -136,7 +135,7 @@ class App extends Component {
               <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
                 © 2022 Copyright:
                 <a className='text-reset fw-bold' href='https://google.com/'>
-                  website.com
+                  XC.LLC.com
                 </a>
               </div>
             </MDBFooter>

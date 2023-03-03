@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './products.css';
+import IMAGES from '../Images/images.js';
+import Modala from './modal';
 import { MDBPagination, MDBPaginationItem, MDBPaginationLink } from 'mdb-react-ui-kit';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -151,7 +153,7 @@ const images4 = [
 
 ];
 
-function MyVerticallyCenteredModal(props) {
+function MyVerticallyCenteredModal(props,imgs) {
     return (
       <Modal
         {...props}
@@ -165,7 +167,7 @@ function MyVerticallyCenteredModal(props) {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={require('../Images/img/ASB_77.png')}/>
+          <img src={imgs}/>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
@@ -221,7 +223,7 @@ function Products() {
                     <MDBCol size='10'>
                         <MDBTabsContent>
                             <MDBTabsPane show={verticalActive === 'tab1'}>
-                                <div class="card flex-row"><img class="card-img-lg-left" src={require('../Images/img/ASB_77_thumb.jpg')} onClick={() => setModalShow(true)}/>
+                                <div class="card flex-row"><img class="card-img-lg-left" src={IMAGES.ASB_77_Tmb} onClick={() => setModalShow(true)}/>
                                     <div class="card-body">
                                         <div id="model">
                                             <h7 class="card-title h5 h4-sm">Model:</h7>
@@ -238,40 +240,7 @@ function Products() {
                                         
                                     </div>
                                 </div>
-                                <div class="card flex-row"><img class="card-img-lg-left" src={require('../Images/img/ASB_77_thumb.jpg')} onClick={() => setModalShow(true)}/>
-                                    <div class="card-body">
-                                        <div id="model">
-                                            <h7 class="card-title h5 h4-sm">Model:</h7>
-                                            <p class="card-text">ASB-77</p>
-                                        </div>
-                                        <div id="Size">
-                                            <h7 class="card-title h5 h4-sm">Size(mm): </h7>
-                                            <p class="card-text">1700x800x790<br></br>1600x780x770<br></br>1600x700x750<br></br>1550x690x750</p>
-                                        </div>
-                                        <div id="Prod_Cat">
-                                            <h7 class="card-title h5 h4-sm">Product Categories:</h7>
-                                            <p class="card-text">Empty Bathtub<br></br>Golden Mosaic With Golden Feet</p>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="card flex-row"><img class="card-img-lg-left" src={require('../Images/img/ASB_77_thumb.jpg')} onClick={() => setModalShow(true)}/>
-                                    <div class="card-body">
-                                        <div id="model">
-                                            <h7 class="card-title h5 h4-sm">Model:</h7>
-                                            <p class="card-text">ASB-77</p>
-                                        </div>
-                                        <div id="Size">
-                                            <h7 class="card-title h5 h4-sm">Size(mm): </h7>
-                                            <p class="card-text">1700x800x790<br></br>1600x780x770<br></br>1600x700x750<br></br>1550x690x750</p>
-                                        </div>
-                                        <div id="Prod_Cat">
-                                            <h7 class="card-title h5 h4-sm">Product Categories:</h7>
-                                            <p class="card-text">Empty Bathtub<br></br>Golden Mosaic With Golden Feet</p>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
+                                
         
                             </MDBTabsPane>
                             <MDBTabsPane show={verticalActive === 'tab2'}>
